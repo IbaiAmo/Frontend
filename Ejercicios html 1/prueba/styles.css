@@ -1,0 +1,16 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin:0;
+}
+
+
+.barra{
+    position: sticky;
+    width: 100%;
+    background: linear-gradient(45deg, red, black);
+}
+
+h1{
+    color: white;
+}

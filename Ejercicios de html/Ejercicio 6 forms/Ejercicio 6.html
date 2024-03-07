@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ibai Formulario</title>
+</head>
+
+
+<body>
+<p style="font-size: 40px; font-family: impact;">Mi formulario:</p> <!--texto con fuente y tamaño de letra-->
+
+<form action="https://www.w3schools.com/action_page.php" method="post"> <!--formulario que se va a mandar a la web esa con el método post.-->
+
+<ul type="disc"> <!--lista desordenada con punto-->
+	<li>
+  <label for="Nombre">Nombre:</label>
+  <input type="text" id="Nombre" name="Nombre"><br><br> <!--input tipo texto para escribir-->
+	</li>
+
+	<li>
+  <label for="gmail">Email:</label>
+  <input type="text" id="gmail" name="gmail"><br><br>
+	</li>
+
+	<li>
+  <label for="Contrasena">Contraseña:</label>
+  <input type="password" id="Contrasena" name="Contrasena"><br> <!--Este input es como el de texto pero el texto aparece como puntos-->
+	</li>
+
+  </ul>
+
+
+<br>
+
+<ul>
+<li>
+	<p>Como te sientes ahora?</p>
+	<ul type="disc"> <!--lista desordenada con punto-->
+		
+			<li>
+				<label for="Enfadado">Enfadado</label>
+				 <input type="checkbox" id="Enfadado" name="Como te sientes" value="Enfadado"> <!--input tipo checkbox que puedes elegir más de uno y se pueden quitar-->
+			</li>
+			<li>
+				<label for="Triste">Triste</label>
+				 <input type="checkbox" id="Triste" name="Como te sientes" value="Triste">
+			</li>
+			<li>
+				<label for="Contento">Contento</label>
+				 <input type="checkbox" id="Contento" name="Como te sientes" value="Contento">
+			</li>
+			<li>
+				<label for="Ambivalente">Ambivalente</label>
+				 <input type="checkbox" id="Ambivalente" name="Como te sientes" value="Ambivalente">
+			</li>
+
+		
+
+
+	</ul>
+
+</li>
+
+
+
+</ul>
+
+<ul>
+<li>
+	<p>Como de satisfecho estás con mi servicio?</p>
+	<ul type="disc">
+		
+			<li>
+				<label for="Muy satisfecho">Muy satisfecho</label>
+				 <input type="radio" id="Muy satisfecho" name="servicio" value="Muy satisfecho"> <!--input tipo radio, es un círculo yu solo se puede elegir una de las opciones que hay, hay que poner el mismo name para que estén todas conectadas-->
+			</li>
+			<li>
+				<label for="Satisfecho">Satisfecho</label>
+				 <input type="radio" id="Satisfecho" name="servicio" value="Satisfecho">
+			</li>
+			<li>
+				<label for="Normal">Normal</label>
+				<input type="radio" id="Normal" name="servicio" value="Normal">
+			</li>
+			<li>
+				<label for="Insatisfecho">Insatisfecho</label>
+				 <input type="radio" id="Insatisfecho" name="servicio" value="Insatisfecho">
+			</li>
+
+			<li>
+				<label for="Muy insatisfecho">Muy insatisfecho</label>
+				 <input type="radio" id="Muy insatisfecho" name="servicio" value="Muy insatisfecho">
+			</li>
+		
+	</ul>
+</li>
+</ul>
+
+<ul>
+	<li>
+		
+    	<label for="Comentarios">Comentarios</label>
+    	<textarea id="Comentarios" name="Comentarios" rows="4" cols="50" style="resize: none;"></textarea> <!--El textarea es como el de texto pero este se puede hacer más grande-->
+		
+	</li>
+	<br>
+    <li>
+    	
+    		<label for="Ubicación">Sitios visitados</label>
+    		<select id="Ubicación" name="Ubicación"> <!--este input es un botón en el que aparecen varias opciones y podemos elegir una-->
+
+    		<option value="Ninguno" disabled selected>Elige país</option> <!--"Disabled selected" sirve para que no se pueda elegir esta opción, lo uso para que no aparezca argentina como primera opción y además si dejamos esta opción, cuando mandamos el form no va a haber ningún dato-->	
+    		
+        	<option value="Argentina">Argentina</option>
+        	<option value="Brasil">Brasil</option>
+        	<option value="Estados Unidos">Estados Unidos</option>
+       	 	<option value="Canadá">Canadá</option>
+        	<option value="Francia">Francia</option>
+        	<option value="Australia">Australia</option>
+        	<option value="Japón">Japón</option>
+
+    		</select>
+		
+
+    </li>
+
+</ul>
+
+<input type="submit" value="Listo"> <!--Botón para mandar el formulario-->
+
+</form>
+
+</body>
+</html>

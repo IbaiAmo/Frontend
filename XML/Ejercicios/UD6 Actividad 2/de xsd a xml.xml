@@ -1,0 +1,11 @@
+<items>
+    <item>
+        <name NameId="1">gato naranja</name>
+        <photo>http://pisces.bbystatic.com/image2/BestBuy_US/Gallery/pol_SOL-62618_inspo_der-141402.jpg</photo>
+        <tags>Gato</tags>
+        <diameter>50</diameter>
+        <weight>3</weight>
+        <price>100</price>
+        <size>Big</size>
+    </item>
+</items>

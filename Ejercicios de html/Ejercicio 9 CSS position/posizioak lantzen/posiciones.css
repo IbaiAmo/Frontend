@@ -1,0 +1,50 @@
+.goiburua{
+    text-align: center;
+    background-color: yellow;
+    border: solid 0px;
+    padding: 3px;
+    border-right-width: 400px;
+    border-color: red;
+    border-left-width: 400px;
+    }
+
+.fixed{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    border: solid 0px;
+    border-right-width: 100px;
+    border-color: red;
+    border-left-width: 100px;
+    background-color: yellow;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+    text-align: center;
+    background-color: yellow;
+    border: solid 0px limegreen;
+    padding: 3px;
+    border-right-width: 400px;
+    border-color: red;
+    border-left-width: 400px;
+} 
+
+.relative{
+    position: relative;
+    border: solid 2px limegreen;
+    width: 20%;
+    height: 100px;
+    background-color: red;
+}
+
+.absolute{
+    position: absolute;
+    border: solid 2px limegreen;
+    right: 20px;
+    bottom: 0;
+    padding-right: 20px;
+    padding-bottom: 10px;
+	background-color: yellow;
+}

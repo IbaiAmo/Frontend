@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none
+}
+
+h2 {font-size: 20px}
+
+ul h2 {font-size: 16px}
+
+p, ol {color:darkred}
+
+.resaltado {font-weight: bold}
+
+div.resaltado {color: darkslategrey}
+
+p.resaltado {color: blueviolet}
+
+a:link { text-decoration: none }
+
+span {font-family: arial; text-decoration: underline}
+
+#sin_subrayar {text-decoration: none}
+
+

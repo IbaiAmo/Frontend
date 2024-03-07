@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Ejercicio selectores 3 CSS Raúl Pérez tieneblog</title>
+
+		<style type="text/css">
+			
+/* Hay poner el selector delante de cada declaración para que afecte a los elementos que indica
+el comentario que cada declarción tiene encima*/
+			
+			/* Todos los elementos de la pagina */
+			* { 
+				 font-family: "Open Sans", Arial, sans-serif;
+			    font-size: 14px;
+			    line-height: 1.6;
+			    color: #494949;
+			}
+			 
+			/* Todos los parrafos de la pagina */
+		  p { 
+				color: #666; 
+			}
+			
+				/* Todos los elementos h1 de la pagina */
+			h1 { 
+				font-weight: bold;
+				font-size: 22px;
+				color: #DD1E64;
+			}
+			
+			/*todos los elementos con clase producto*/
+			.producto {
+				background-color: pink;
+			
+			}
+			
+			/*todos los elementos con clase descripcion*/			
+			.descripcion {
+		
+				font-size: 16px;
+				text-decoration: underline;
+				font-weight: bold;
+		  }
+			
+			/*los elementos  <span> de clase especial que esten dentro de un <h1>*/			
+	      h1 span.especial {
+			
+				font-weight: bold;
+				font-size: 20px;
+				color: yellowgreen;
+				background-color: black;			
+			}
+			
+			
+   	/*las imagenes que esten en un elemento con id destacado*/		
+		#destacado img{
+			
+				width: 100%;
+			}
+			
+
+	   /*el elemento con id anuncio*/
+		#anuncio{
+		
+			width: 60%;
+			margin: auto;
+			background-color: #DD1E64;
+		
+		}
+		
+		/*los parrafos que esten dentro de un elemento con id anuncio*/
+      #anuncio p{
+		
+			color: white;
+		
+		}
+			
+	 
+		</style>
+</head>
+
+
+<body>
+	
+		<div class="producto">
+			<h1><span class="especial">El trozo</span> de texto estándar de Lorem Ipsum</h1>
+				<p class="descripcion">Usado desde el año 1500 es <a href="#">reproducido debajo</a> para aquellos interesados.</p>
+				<p>  Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+				<p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de  que <span class="especial">Lorem Ipsum</span>parezca razonable.</p>
+		
+		</div>
+		
+		<div id="anuncio">
+				<p>  Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+				<p>  Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+		
+		</div>
+		
+		<div class="producto">
+				<h1><span class="especial">El trozo</span> de texto estándar de Lorem Ipsum</h1>
+				<p class="descripcion">Usado desde el año 1500 es <a href="#">reproducido debajo</a> para aquellos interesados.</p>
+				<p>  Las secciones 1.10.32 y 1.10.33 de "de Finibus Bonorum et Malorum" por Cicero son también reproducidas en su forma original exacta, acompañadas por versiones en Inglés de la traducción realizada en 1914 por H. Rackham.</p>
+				<p>Usa un diccionario de mas de 200 palabras provenientes del latín, combinadas con estructuras muy útiles de sentencias, para generar texto de  que <span class="especial">Lorem Ipsum</span>parezca razonable.</p>
+		
+		</div>
+		
+		<div id="destacado">
+		
+				<img src="hero-people (1).jpg" alt="" />
+				
+		</div>
+
+
+</body>
+</html>

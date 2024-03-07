@@ -1,0 +1,39 @@
+<trabajadores>
+    <trabajador1>
+
+        <datosPersonales>
+            <nombre>Jon</nombre>
+            <apellido>Braun</apellido>
+        </datosPersonales>
+
+        <datosLaborales>
+            <nomina>
+                <importe divisa="euro">1000</importe>
+            </nomina>
+            <oficina>
+                <calle>Errobi &gt; a</calle>
+                <num>1</num>
+            </oficina>
+        </datosLaborales>
+    </trabajador>
+
+    <trabajador2>
+
+        <datosPersonales>
+            <nombre>Pepe</nombre>
+            <apellido>Grillo</apellido>
+        </datosPersonales>
+
+        <datosLaborales>
+            <nomina>
+                <importe divisa="dolar">1100</importe>
+            </nomina>
+            <oficina>
+                <calle>Errobi &gt; b</calle>
+                <num>12</num>
+            </oficina>
+        </datosLaborales>
+
+    </trabajador>
+
+</trabajadores>

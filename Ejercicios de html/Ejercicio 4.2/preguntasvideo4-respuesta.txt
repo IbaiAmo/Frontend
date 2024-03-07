@@ -1,0 +1,33 @@
+Responde
+
+1.- ¿Cuales son las etiquetas en HTML que se utilizan para indicar titulos y subtitulos de una pagina web?
+
+Con la etiqueta <h1> se hacen los títulos. El <h6> es la letra más pequeña
+
+2.- ¿De ellas cual indica el titulo principal?.
+
+<h1> Título </h1>
+
+3.- ¿Que etiquetas HTML especifican una tabla?
+
+<table> </table>
+
+4.- ¿Qué etiquetas HTML especifican filas de una tabla?
+
+<tr> </tr>
+
+5.- ¿Que etiquetas HTML crean columnas de una tabla?
+
+<td> </td>
+
+6.- ¿Qué etiquetas HTML especifican celdas de una tabla?
+
+<td> <tr> </tr> </td>
+
+7.- Crea una tabla de cuatro filas y tres columnas y borde 1.
+
+    La primera Fila son los titulos de cada columna : Código, Producto, Precio.
+     Los contenidos por fila: 1001, Patatas, 3,50 / 2001, Cebollas, 0,50 / 3001,Puerros, 1,50.
+
+8.- ¿Qué etiqueta sirve para combinar celdas de una tabla?
+<td colspan=""> </td>

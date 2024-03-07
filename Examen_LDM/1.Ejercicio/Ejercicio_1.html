@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rothko</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            background-color: lightgray;
+            display: grid;
+            place-content: center;
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            background-color: blue;
+            height: 400px;
+            width: 300px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+
+        #i1{
+            background-color: white;
+            flex-grow: 2;
+            width: 90%;
+            margin-top: 40px;
+            filter: blur(2px);
+        }
+
+        #i2{
+            background-color: orange;
+            flex-grow: 1;
+            width: 100%;
+            filter: blur(2px);
+        }
+
+        #i3{
+            background-color: black;
+            flex-grow: 2;
+            width: 90%;
+            margin-bottom: 20px;
+            filter: blur(2px);
+        }
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div class="container">
+
+        <div id="i1"></div>
+        <div id="i2"></div>
+        <div id="i3"></div>
+
+    </div>
+
+</body>
+</html>

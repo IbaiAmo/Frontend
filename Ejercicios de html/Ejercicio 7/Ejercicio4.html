@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<title>Formulario bachiller</title>
+
+<style>
+	
+	input{
+		background-color: yellow;
+		color: darkred;
+	}
+	body {
+		font-family: arial;
+	}
+	select{
+		background-color: yellow;
+		color: darkred;
+	}
+
+</style>
+
+
+</head>
+<body style="background-image:url(6772234.png); background-repeat: no-repeat; background-size: 40%; background-position: 80% 50px;">
+
+<form action="https://www.w3schools.com/action_page.php" method="post">
+
+<label for="Nombre">Nombre:</label>
+<input type="text" id="Nombre" name="Nombre"><br><br>
+
+<label for="Contrasena">Contrasena:</label>
+<input type="password" id="Contrasena" name="Contrasena"><br> <!--Este input es como el de texto pero el texto aparece como puntos-->
+
+<input type="radio" id="Clase1" name="Clase" value="1 de bachiller">
+<label for="Clase1">1 de bachiller</label> <br>
+
+<input type="radio" id="Clase2" name="Clase" value="2 de bachiller">
+<label for="Clase2">2 de bachiller</label> <br>
+
+<input type="checkbox" id="Bicicleta" name="Vehiculo" value="Bicicleta">
+<label for="Bicicleta">Bicicleta</label> <br>
+
+<input type="checkbox" id="Moto" name="Vehiculo" value="Moto">
+<label for="Moto">Moto</label> <br>
+
+<input type="checkbox" id="Piragua" name="Vehiculo" value="Piragua">
+<label for="Piragua">Piragua</label> <br>
+
+<select id="Ubicación" name="Ubicación"> <!--este input es un botón en el que aparecen varias opciones y podemos elegir una-->
+
+    		<option value="Ninguno" disabled selected>Elige coche</option> <!--"Disabled selected" sirve para que no se pueda elegir esta opción, lo uso para que no aparezca argentina como primera opción y además si dejamos esta opción, cuando mandamos el form no va a haber ningún dato-->	
+    		
+        	<option value="Seat">Seat</option>
+        	<option value="Renault">Renault</option>
+        	<option value="Nissan">Nissan</option>
+       	 	<option value="Toyota">Toyota</option>
+        	<option value="Mercedes">Mercedes</option>
+        	<option value="Twingo">Twingo</option>
+        	<option value="Volkswagen">Volkswagen</option>
+
+    		</select> <br>
+
+
+<input type="submit" value="Listo"> <!--Botón para mandar el formulario-->
+<input type="reset" value="limpiar"> 
+
+
+</form>
+
+
+</body>
+</html>
