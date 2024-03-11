@@ -5,12 +5,22 @@
 }
 
 
-.barra{
+nav{
     position: sticky;
+    top: 0;
     width: 100%;
-    background: linear-gradient(45deg, red, black);
+    background-color: red;
+    animation: cambio linear both;
+    animation-timeline: scroll(root);
+    animation-range: 0 100px;
 }
 
 h1{
     color: white;
+}
+
+@keyframes cambio{
+    to{
+        background-color: rgb(78, 78, 198);
+    }
 }
