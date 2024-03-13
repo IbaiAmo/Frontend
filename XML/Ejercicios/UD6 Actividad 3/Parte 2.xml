@@ -1,0 +1,6 @@
+
+<!--Este es el xml del schema, se pueden poner todos los precios que quieras-->
+<precios>
+    <precio>3,33</precio>
+    <precio>2,99</precio>
+</precios>

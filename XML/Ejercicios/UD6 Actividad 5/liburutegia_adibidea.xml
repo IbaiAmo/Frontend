@@ -1,0 +1,17 @@
+<liburutegiak>
+	<liburutegia id="1"> <!-- Liburutegi bat baino gehiago egon daitezke -->
+		<liburuzaina> <!-- bakarra egon daiteke -->
+			<izen_abizena>Jon Braun</izen_abizena>
+			<jaiotza_data>1991-01-01</jaiotza_data>
+		</liburuzaina>
+		<kokapena>Kalea 1</kokapena>
+		<liburuak> <!-- gutxienez liburu 1 -->
+			<liburua ISBN="1213132"> <!-- ISBN beharrezkoa da -->
+				<titulua hizkuntza="euskara">Teo parkean</titulua>
+				<edizioa>1</edizioa> <!-- soilik 1,2 edo 3 izan daiteke (xs:enumeration) -->
+				<prezioa>9.99</prezioa> <!-- gehienez 2 zenbaki dezimal izango ditu (xs:fractionDigits)-->
+				<tapa>Gogorra</tapa> <!-- defektuzko balioa "biguna" -->
+			</liburua>
+		</liburuak>
+	</liburutegia>
+</liburutegiak>
