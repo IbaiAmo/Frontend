@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="biblioteca_esquema.xsd">
+	<nombre>Biblioteca publica de Zornotza</nombre>
+	<direccion>Calle falsa n1</direccion>
+	<!-- Debe aparecer el bibliotecario, es único -->
+	<bibliotecario>
+		<nombre-apellidos>Pedro Gartzia</nombre-apellidos>
+		<fecha_de_nacimiento>1990-01-01</fecha_de_nacimiento>
+	</bibliotecario>
+	<libros>
+		<!-- gutxienez 5 liburu izan behar ditu biblioteca batek -->
+		<libro ISBN="129121931">
+			<titulo>Teo oporretan</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+		<libro ISBN="129121932">
+			<titulo>Teo oporretan2</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+		<libro ISBN="129121933">
+			<titulo>Teo hondartzan</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+		<libro ISBN="129121934">
+			<titulo>Teo oporretan</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+		<libro ISBN="129121935">
+			<titulo>Teo Teoren libro irakurtzen</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+		<libro ISBN="129121936">
+			<titulo>Teo no-Teo</titulo>
+			<autor>Teodoro</autor>
+		</libro>
+	</libros>
+</biblioteca>

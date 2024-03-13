@@ -24,3 +24,12 @@ h1{
         background-color: rgb(78, 78, 198);
     }
 }
+
+.anton{
+    display: absolute;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: blue;
+}
