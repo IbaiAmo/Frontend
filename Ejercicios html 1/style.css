@@ -4,6 +4,15 @@
     margin: 0;
 }
 
+body{
+    background-color: rgb(226, 226, 226);
+}
+
+#check{
+    width: 50px;
+    height: 50px;
+}
+
 .tachado{
     color: red;
 }
@@ -20,7 +29,8 @@
     width: 60%;
     padding: 10px;
     height: 100vh;
-    transition: all 1s;
+    transition: ease-out 0.7s;
+
 }
 #flex{
     display: flex;
@@ -32,8 +42,126 @@
     color: white;
     text-decoration: none;
     font-size: 30px;
+    transition: ease-in-out .7s;
 }
 
 .noshow{
+    visibility: hidden;
+    translate: -100%;
+}
+
+
+
+
+/*BurgerChurger*/
+
+
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(211, 61, 61);
+    height: 80px;
+}
+
+.navBar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding-inline: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1{
+    font-size: 30px;
+    color: white;
+}
+
+.menu{
+    display: flex;
+    width: fit-content;
+    gap: 30px;
+}
+
+.menu a{
+    font-size: 35px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#menuCerrar{
     display: none;
+}
+
+#menuAbrir{
+    display: none;
+}
+
+
+@media (width < 900px){
+
+    .showMenu{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: rgb(86, 86, 250);
+        transition: ease 1s;
+        z-index: 298929;
+    }
+
+    .menu{
+        flex-direction: column;
+        margin-left: 10px;
+        margin-top: 30px;
+    }
+
+    #menuCerrar{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 40px;
+        cursor: pointer;
+        transition: all .5s;
+    }
+    #menuCerrar:hover{
+        scale: 1.1;
+    }
+
+    #menuAbrir{
+        cursor: pointer;
+        width: 40px;
+        display: block;
+        transition: ease .5s;
+    }
+
+    #menuAbrir:hover{
+        scale: 1.1;
+    }
+
+
+    .menuCont{
+        display: none;
+    }
+
+}
+
+@media(width < 600px){
+    .showMenu{
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 400px;
+        background-color: rgb(86, 86, 250);
+        transition: ease 1s;
+        z-index: 298929;
+    }
+    .menu a{
+        width: fit-content;
+    }
+
 }

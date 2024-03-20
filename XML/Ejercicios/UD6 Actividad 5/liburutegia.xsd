@@ -20,9 +20,15 @@
                 <xs:element name="liburua">                
                 <xs:complexType>
                 <xs:sequence>
-                    <xs:element name="titulua" type="xs:string">
-                        <xs:attribute name="hizkuntza" type="xs:string"/>
-                    </xs:element>
+                    <xs:element name="titulua">
+                     <xs:complexType>    
+						<xs:simpleContent>     
+							<xs:extension base="xs:string">     
+							<xs:attribute name="hizkuntza"  type="xs:string"/>  
+                            </xs:extension>    
+                            </xs:simpleContent>   
+                            </xs:complexType>  
+                      </xs:element>
                     <xs:element name="edizioa">
                     <xs:simpleType>
                     <xs:restriction base="xs:integer">
