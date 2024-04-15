@@ -27,9 +27,57 @@
         </div>
     </nav>
 
+    <div class="slider">
+        <div class="slideFotos activo">
+            <img src="tormenta.jpg">
+        </div>
+        <div class="slideFotos">
+            <img src="cielo.jpg">
+        </div>
+        <div class="slideFotos">
+            <img src="nube.jpg">
+        </div>
+        <div class="slideFotos">
+            <img src="tormenta.jpg">
+        </div>
+        <div class="slideFotos">
+            <img src="cielo.jpg">
+        </div>
+        <div class="containerSol">
+            <img src="arrow-right-line.png" class="solIzq" width="70px" style="rotate: 180deg;">
+            <img src="arrow-right-line.png" class="solDer" width="70px">
+        </div>
+    </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+const fotos = document.querySelectorAll(".slideFotos")
+const solIzq = document.querySelector(".solIzq")
+const solDer = document.querySelector(".solDer")
+
+solIzq.addEventListener('click', e =>{
+    for(let i = 0; i < fotos.length; i++){
+        if (fotos[i].classList.contains("activo") && i != 0){
+            fotos[i].classList.remove("activo");
+            fotos[i-1].classList.add("activo");
+            fotos[i-1].classList.remove("fotoIzq");
+            break;
+        }
+    }
+});
+
+solDer.addEventListener('click', e =>{
+    for(let i = 0; i < fotos.length; i++){
+        if (fotos[i].classList.contains("activo") && i != fotos.length-1){
+            fotos[i].classList.remove("activo");
+            fotos[i].classList.add("fotoIzq");
+            fotos[i+1].classList.add("activo");
+            break;
+        }
+    }
+});
+
+
+</script>
 <script src="menuBurger.js"></script>
 </body>
 </html>

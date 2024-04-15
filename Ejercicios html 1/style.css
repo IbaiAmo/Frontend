@@ -6,6 +6,9 @@
 
 body{
     background-color: rgb(226, 226, 226);
+    padding-top: 300px;
+    height: 300vh;
+    overflow-x: hidden;
 }
 
 #check{
@@ -59,9 +62,10 @@ body{
 nav{
     position: fixed;
     top: 0;
-    width: 100%;
+    width: 100vw;
     background-color: rgb(211, 61, 61);
     height: 80px;
+    z-index: 9999999;
 }
 
 .navBar{
@@ -99,6 +103,50 @@ h1{
     display: none;
 }
 
+.slider{
+    width: 100%;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slideFotos{
+    position: absolute;
+    transform: translateX(100vw);
+    transition: ease .5s;
+}
+
+.slideFotos > img{
+    width: 200px;
+}
+
+.activo{
+    transform: translateX(0);
+}
+
+.activo > img{
+    width: 400px;
+}
+
+.fotoIzq{
+    transform: translateX(-100vw);
+}
+
+.containerSol{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-inline: 100px;
+    background-color: rgb(88, 88, 88);
+}
+
+.containerSol > img{
+    cursor: pointer;
+    z-index: 99999;
+}
+
+
 
 @media (width < 900px){
 
@@ -109,9 +157,10 @@ h1{
         width: 50%;
         height: 100vh;
         background-color: rgb(86, 86, 250);
-        transition: ease 1s;
         z-index: 298929;
     }
+
+
 
     .menu{
         flex-direction: column;
