@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<cinesa>
+    <pelicula>
+        <titulo>Las flipantes aventuras de Anton</titulo>
+        <sinopsis>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, debitis! Maiores veniam itaque, praesentium id sint dicta voluptatibus dolorem provident!</sinopsis>
+        <duracion>1h 30m</duracion>
+        <actores>Anton, Ibai y Robert</actores>
+    </pelicula>
+</cinesa>
