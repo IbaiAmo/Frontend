@@ -1,12 +1,6 @@
 function loadDoc(e) {
     const file = e.target.files[0];
   
-    if (!file) {
-      throw new Error('You need to choose an XML file first')
-      alert('You need to choose an XML file first')
-      return false
-    }
-  
     readDoc(file).then(parseDoc).then(showDocInTable).catch(onError)
   }
   
