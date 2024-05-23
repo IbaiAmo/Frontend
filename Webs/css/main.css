@@ -34,25 +34,26 @@ nav{
     & img{
         width: 200px;
     }
+}
+.paginas{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 
-    & .paginas{
-        display: flex;
-        align-items: center;
-        gap: 20px;
+}
+a{
+    font-size: 20px;
+    text-decoration: none;
+    position: relative;
+    display: block;
+    transition: ease .3s;
+}
 
-        & a{
-            font-size: 20px;
-            text-decoration: none;
-            position: relative;
-            display: block;
-            transition: ease .3s;
-        }
-
-        & .pagina:hover{
+        .pagina:hover{
             color: var(--link-hover);
         }
 
-        & .pagina::after{
+        .pagina::after{
             content: " ";
             position: absolute;
             bottom: -3px;
@@ -63,12 +64,12 @@ nav{
             transition: ease .3s;
         }
 
-        & .pagina:hover::after{
+        .pagina:hover::after{
             width: 100%;
             left: 0;
         }
 
-        & #loginBtn{
+        #loginBtn{
             background-color: var(--bg-color-button);
             padding: 5px;
             border-radius: 5px;
@@ -77,13 +78,13 @@ nav{
             gap: 5px;
         }
 
-        & #loginBtn:hover{
+        #loginBtn:hover{
             background-color: var(--link-hover);
         }
 
-    }
+    
 
-    & #menuAbrir{
+    #menuAbrir{
         font-size: 40px;
         cursor: pointer;
         user-select: none;
@@ -91,21 +92,48 @@ nav{
     }
 
 
-}
+
 
 .sideMenu{
     position: absolute;
-    transform: translateX(100vw);
+    transform: translateX(100%);
+    top: 0;
     right: 0;
-    background-color: #0F0F10;
-    height: 100vh;
+    background-color: var(--bg-color-menu);
+    height: fit-content;
     width: 50%;
+    height: 100vh;
     transition: ease .4s;
     
+}
 
+.menu{
     display: flex;
     flex-direction: column;
+    margin: 60px 30px;
+    gap: 30px;
 
+    & a{
+        width: fit-content;
+        font-size: 30px;
+    }
+
+    & img{
+        width: 270px;
+        position: absolute;
+        right: 10px;
+        bottom: 30px;
+        opacity: 50%;
+    }
+}
+
+#menuCerrar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
 }
 
 .showMenu{
@@ -129,10 +157,27 @@ nav{
     nav{
        padding: 10px 50px;
     }
+
+    .menu a{
+        font-size: 25px;
+    }
+
+    .menu img{
+        width: 240px;
+        bottom: 30px;
+    }
 }
 
 @media (width < 500px) {
     nav{
        padding: 10px 30px;
+    }
+
+    .sideMenu{
+        width: 100%;
+    }
+
+    .menu a{
+        font-size: 20px;
     }
 }
