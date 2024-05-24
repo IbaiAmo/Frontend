@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="IMG/iconos/iconoVentana.ico">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/inicio.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <title>Cinesa</title>
 </head>
@@ -16,8 +17,8 @@
         <div class="paginas">
 
             <a href="index.html" class="pagina">Inicio</a>
-            <a href="#" class="pagina">Reservas</a>
-            <a href="#" class="pagina">Sugerencias</a>
+            <a href="pages/reservas.html" class="pagina">Reservas</a>
+            <a href="pages/sugerencias.html" class="pagina">Sugerencias</a>
             <a href="#" class="pagina">Acerca de</a>
             <a href="#" id="loginBtn">Iniciar sesión
                 <span class="material-symbols-outlined">
@@ -32,10 +33,10 @@
         <div class="sideMenu">
             <div class="menu">
                 <a href="index.html" class="pagina">Inicio</a>
-                <a href="#" class="pagina">Reservas</a>
-                <a href="#" class="pagina">Sugerencias</a>
-                <a href="#" class="pagina">Acerca de</a>
-                <a href="#" id="loginBtn">Iniciar sesión
+                <a href="pages/reservas.html" class="pagina">Reservas</a>
+                <a href="pages/sugerencias.html" class="pagina">Sugerencias</a>
+                <a href="pages/acerca_de.html" class="pagina">Acerca de</a>
+                <a href="pages/login.php" id="loginBtn">Iniciar sesión
                     <span class="material-symbols-outlined">
                     login
                     </span>
@@ -48,6 +49,52 @@
 
     </nav>
 
+    <main>
+
+        <div class="sliderCont">
+            <div class="carrousel">
+                <div class="pelicula active">
+                    <img src="IMG/portadas/civil-war.jpg">
+                    <h1>CIVIL WAR</h1>
+                    <a href="pages/reservas.html">¡Compra ya tus entradas!</a>
+                </div>
+                <div class="pelicula">
+                    <img src="IMG/portadas/cazafantasmas-imperio-helado.jpg">
+                    <h1>CAZAFANTASMAS: IMPERIO HELADO</h1>
+                    <a href="pages/reservas.html">¡Ya en tu cine!</a>
+                </div>
+                <div class="pelicula">
+                    <img src="IMG/portadas/el-especialista.jpg">
+                    <h1>EL ESPECIALISTA</h1>
+                    <a href="pages/reservas.html">¡Ya en tu cine!</a>
+                </div>
+                <div class="pelicula">
+                    <img src="IMG/portadas/garfield-la-pelicula.jpg">
+                    <h1>GARFIELD: LA PELÍCULA</h1>
+                    <a href="pages/reservas.html">¡Compra ya tus entradas!</a>
+                </div>
+                <div class="pelicula">
+                    <img src="IMG/portadas/planeta-de-los-simios.jpg">
+                    <h1>PLANETA DE LOS SIMIOS</h1>
+                    <a href="pages/reservas.html">¡Ya en tu cine!</a>
+                </div>
+                
+            </div>
+
+            <div class="flechas">
+                <div id="flechaDerecha"><span class="material-symbols-outlined">
+                    chevron_right
+                    </span></div>
+                <div id="flechaIzquierda"><span class="material-symbols-outlined">
+                    chevron_left
+                    </span></div>
+            </div>
+
+        </div>
+
+    </main>
+
     <script src="js/sideMenu.js"></script>
+    <script src="js/slider.js"></script>
 </body>
 </html>
